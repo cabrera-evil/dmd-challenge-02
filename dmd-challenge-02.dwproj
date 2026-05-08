@@ -6,10 +6,82 @@
     <Name>dmd-challenge-02.database</Name>
     <FullPath>dmd-challenge-02.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Adventure Works DW2022.cube</Name>
+      <FullPath>Adventure Works DW2022.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Adventure Works DW2022.partitions</Name>
+          <FullPath>Adventure Works DW2022.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Product.dim</Name>
+      <FullPath>Dim Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Sales Territory.dim</Name>
+      <FullPath>Dim Sales Territory.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Internet Sales.dim</Name>
+      <FullPath>Fact Internet Sales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Reseller.dim</Name>
+      <FullPath>Dim Reseller.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Reseller Sales.dim</Name>
+      <FullPath>Fact Reseller Sales.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Adventure Works DW2022.ds</Name>
+      <FullPath>Adventure Works DW2022.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Adventure Works DW2022.dsv</Name>
+      <FullPath>Adventure Works DW2022.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2022</Id>
+            <Name>Adventure Works DW2022</Name>
+            <Value xsi:type="xsd:string">Data Source=127.0.0.1;Initial Catalog=AdventureWorksDW2022;Persist Security Info=True;User ID=;Password=;Trust Server Certificate=True</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2022</Id>
+            <Name>Adventure Works DW2022</Name>
+            <Value xsi:type="xsd:string">Microsoft.Data.SqlClient</Value>
+          </ConfigurationSetting>
+        </ConnectionProviderMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2022</Id>
+            <Name>Adventure Works DW2022</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
