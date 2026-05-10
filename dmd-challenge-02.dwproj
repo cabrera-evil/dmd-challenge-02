@@ -64,14 +64,13 @@
           <ConfigurationSetting>
             <Id>Adventure Works DW2022</Id>
             <Name>Adventure Works DW2022</Name>
-            <Value xsi:type="xsd:string">Data Source=127.0.0.1;Initial Catalog=AdventureWorksDW2022;Persist Security Info=True;User ID=;Password=;Trust Server Certificate=True</Value>
+            <Value xsi:type="xsd:string">Provider=MSOLEDBSQL.1;Data Source=127.0.0.1;Password=;User ID=;Initial Catalog=AdventureWorksDW2022</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings>
           <ConfigurationSetting>
             <Id>Adventure Works DW2022</Id>
             <Name>Adventure Works DW2022</Name>
-            <Value xsi:type="xsd:string">Microsoft.Data.SqlClient</Value>
           </ConfigurationSetting>
         </ConnectionProviderMappings>
         <ConnectionSecurityMappings>
